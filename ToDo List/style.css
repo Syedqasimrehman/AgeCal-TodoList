@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+  color: #f3f3f3;
+}
+ul > li {
+  text-decoration: none;
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: all ease-in-out 0.9s;
+}
+ul > li:hover {
+  background-color: #777;
+}
+.todo_data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Search {
+  border-bottom: 5px solid #ccc;
+  background: none;
+  color: #ccc;
+  font-size: 18px;
+}
+input {
+  padding: 1rem;
+  margin: 10px 0;
+  width: 550px;
+  border-radius: 10px;
+  border: 1px solid#333;
+  font-size: 18px;
+}
+.delete {
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease;
+}
+.delete:hover {
+  color: red;
+}
+
+.filtered {
+  display: none !important;
+}
+
+.check {
+  /* opacity: 0; */
+  float: left;
+}
+.clicked {
+  background: blue;
+}
